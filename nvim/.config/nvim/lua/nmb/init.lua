@@ -1,3 +1,2 @@
-require('nmb.lspconfig')
-require('nmb.nvim-cmp')
+require('nmb.lsp')
 require('nmb.treesitter')
