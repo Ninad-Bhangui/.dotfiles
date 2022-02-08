@@ -41,3 +41,5 @@ lua require('nmb')
 
 colorscheme gruvbox
 highlight Normal guibg=none
+
+let mapleader = " "
