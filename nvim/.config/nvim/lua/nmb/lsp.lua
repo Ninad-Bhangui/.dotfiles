@@ -1,6 +1,7 @@
 local cmp = require('cmp')
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local nvim_lsp = require('lspconfig')
+local lspkind = require("lspkind")
 cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
@@ -30,7 +31,10 @@ cmp.setup({
       -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
-    })
+    }),
+    formatting = {
+        format = lspkind.cmp_format()
+    },
   })
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline('/', {
