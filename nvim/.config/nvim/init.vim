@@ -28,10 +28,10 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': 'TSUpdate'}
 Plug 'nvim-treesitter/playground'
 Plug 'sbdchd/neoformat'
-
+Plug 'onsails/lspkind-nvim'
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
-
+Plug 'rafamadriz/friendly-snippets'
 call plug#end()
 
 lua require('nmb')
