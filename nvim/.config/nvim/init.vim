@@ -30,11 +30,15 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': 'TSUpdate'}
 Plug 'nvim-treesitter/playground'
+Plug 'numToStr/Comment.nvim'
 Plug 'sbdchd/neoformat'
 Plug 'onsails/lspkind-nvim'
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
+
+Plug 'fatih/vim-go'
+Plug 'mfussenegger/nvim-dap'
 call plug#end()
 
 lua require('nmb')

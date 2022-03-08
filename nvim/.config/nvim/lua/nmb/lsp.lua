@@ -2,6 +2,7 @@ local cmp = require('cmp')
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local nvim_lsp = require('lspconfig')
 local lspkind = require("lspkind")
+local comment = require('Comment').setup()
 --
 -- lspconfig
 --
@@ -26,7 +27,7 @@ end
 -- nvim-cmp supports lsp capabilities
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 -- Loop to setup multiple servers
-servers = {'tsserver','pyright','gopls','rust_analyzer'}
+servers = {'tsserver','pyright','gopls','rust_analyzer','solargraph'}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         capabilities=capabilities,
