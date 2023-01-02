@@ -44,6 +44,19 @@ return require('packer').startup(function(use)
 		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
 		  {'rafamadriz/friendly-snippets'},
-	  }
-  }
+	  } }
+
+  use("folke/zen-mode.nvim")
+
+  -- Formatting plugin. may remove later
+  use("sbdchd/neoformat")
+
+  -- Comment nvim
+  use("numToStr/Comment.nvim")
+  -- Debugger Adapter Protocol nvim
+  use("mfussenegger/nvim-dap")
+  use("leoluz/nvim-dap-go")
+  use("rcarriga/nvim-dap-ui")
+  use("theHamsta/nvim-dap-virtual-text")
+  use("nvim-telescope/telescope-dap.nvim")
   end)
